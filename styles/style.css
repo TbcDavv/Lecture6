@@ -1,8 +1,13 @@
 body {
-    width: 90%;
     margin: auto;
     font-family: "Roboto", sans-serif;
     background-color: #f1f1f1;
+}
+
+header,
+main {
+    width: 90%;
+    margin: auto
 }
 
 header nav {
@@ -65,8 +70,32 @@ main .box .info .time {
     margin-top: 30px;
 }
 
-.happeningNow {
+main .happeningNow {
     display: flex;
+}
+
+main .happeningNow .imgText {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+main .happeningNow .imgText p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main .happeningNow .left {
+    margin-right: 150px;
+}
+
+main .happeningNow .right img {
+    display: block;
+    margin-bottom: 100px;
 }
 
 footer {
@@ -83,11 +112,20 @@ footer .insideFooter {
     justify-content: space-between;
 }
 
+footer .links {
+    display: flex;
+}
+
+footer .links section {
+    margin-right: 100px;
+}
 
 footer .links section a {
     color: #818687;
     font-weight: 700;
     text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
 }
 
 footer .slogan {
